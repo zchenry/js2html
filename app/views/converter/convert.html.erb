@@ -1,0 +1,4 @@
+<h1>Render History</h1>
+<% @caches.each do |c| %>
+  <%= Rack::Utils.unescape(c)[0..-6] %>
+<% end %>
